@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>26 September</title>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        background-image: url('./bg.png');
+        height: 100vh;	       
+	    background-size: cover;
+	    background-position: center;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Bitter', serif;
+
+    }
+    header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    }
+    #navigationBar{
+        display: flex;
+    }
+    #navigationBar li{
+        list-style: none;
+    }
+    #navigationBar li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: 0.ms ease;
+
+    }
+    #navigationBar li a:hover{
+        background-color: #fff;
+	    color: #000;
+        border-radius: 30px;
+    }
+
+    /* #logo{ 
+        display: flex;
+        flex-direction: column;
+    } */
+    #logo img{
+        width: 70px;
+        float: left;
+        border-radius: 50%;
+        /* filter: invert(100%); */
+    
+    }
+    #searchBar{
+        padding: 10px;
+    }
+    #searchBar input{
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+    .form{
+        margin: 3rem 5rem;
+        /* margin: 2rem auto; */
+        border: 2px solid white;
+        border-radius: 10px;
+        /* display: inline; */
+        width: 34%;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .form h1{
+        color: white;
+        margin-left: 10px;
+    }
+    #form-group{
+        display: flex;
+        flex-direction: column;
+        /* rem values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements.
+         If font-size is not explicitly defined in root element then 1rem will be equal to the default font-size 
+         provided by the browser (usually 16px).
+        margin: 2rem 5rem; */
+        width: 100%;
+        /* margin: auto; */
+        height: 50vh;
+    }
+    #form-group input{
+         width: 35%;
+         margin: 5px 10px;
+         padding: 5px 10px;
+         outline: none;
+         border-radius: 8px;
+         border: none;
+         width: 80%;
+         font-family: 'Playfair Display', serif;
+        
+    }
+    #form-group textarea{
+        margin: 5px 10px;
+         padding: 5px 10px;
+         outline: none;
+         border-radius: 8px;
+         border: none;
+         width: 80%;
+         font-family: 'Playfair Display', serif;
+    }
+    #btn{
+        width: 84%;
+        margin: 5px 10px;
+         padding: 5px 10px;
+         outline: none;
+         border-radius: 8px;
+         border: none;
+         font-family: 'Playfair Display', serif;
+         cursor: pointer;
+    }
+    #btn:hover{
+        background-color: rgb(211, 204, 204);
+    }
+    .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(231, 243, 243);
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head" id="logo">
+            <img src="./logo.png" alt="book-image">
+        </div>
+        <div class="head" id="navbar">
+            <ul id="navigationBar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./books.html">Books</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <div class="head" id="searchBar">
+          <input type="search" name="" id="" placeholder="Search your books here....">
+        </div>
+    </header>
+    <section class="form">
+        <h1>Best Books in the World</h1>
+        <form action="backend.php">
+            <div id="form-group">
+                <input type="text" placeholder="Enter your Email">
+                <input type="text" placeholder="Enter your book title">
+                <input type="text" placeholder="Enter your Locality">
+                <!-- <input type="text" placeholder="Enter your Contact number"> -->
+                <textarea name="" id="" cols="30" rows="10" placeholder="Comments"></textarea>
+                <button id="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <div class="footer">
+        <p class="content">Copyright @ 2021 | Designed by Mehwish Mushtaq</p>
+    </div>
+</body>
+</html>
